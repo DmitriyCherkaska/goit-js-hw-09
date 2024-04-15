@@ -89,9 +89,9 @@ function createGalleryMarkup(images) {
 
 galleryCont.insertAdjacentHTML('beforeend', createGalleryMarkup(images));
 
-const tools = {
+const variants = {
   captionDelay: 250,
   captionsData: 'alt',
 };
 
-const lightbox = new SimpleLightbox('.gallery-link', tools);
+const lightbox = new SimpleLightbox('.gallery-link', variants);
