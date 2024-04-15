@@ -24,13 +24,13 @@ updateFormContent();
 
 
 form.addEventListener('submit', function (event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  const formSubmit = JSON.parse(localStorage.getItem(localKeyStorage)) || {};
+    const formSubmit = JSON.parse(localStorage.getItem(localKeyStorage)) || {};
 
-  if (formSubmit.email && formSubmit.message) {
-    console.log(formSubmit);
+    if (formSubmit.email && formSubmit.message) {
+        console.log(formSubmit);
 
-    localStorage.removeItem(localKeyStorage);
-    form.reset();
-  }
+        localStorage.removeItem(localKeyStorage);
+        form.reset();
+    });
